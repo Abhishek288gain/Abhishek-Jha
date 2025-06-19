@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <form action="/server"> <!--when we chick on submit button if check is fill then URL show name-vaL pair otherwise not  -->>
+        <input type="checkbox" placeholder = "your age" id = "age" name = "age" checked>
+        <label for="age" >I am 18+</label>
+        <button>Submit</button>
+
+        <hr><!--for radio button-->
+        <label for="apple">Apple</label>
+        <input type="radio" name = "Fruit" id = "apple" value = "apl">
+        <label for="mango">Mango</label>
+        <input type="radio" name = "Fruit" id = "mango" value = "man">
+        <label for="banana">banana</label>
+        <input type="radio" name = "Fruit" id = "banana" value = "bana">
+        <button>Submit</button>
+        <hr>
+
+        <div><!--for selection the option-->
+            <label for = "Apple">A choose Your fruit</label>
+            <select name="Fruit" id="Apple" >
+                <option value = "Apple">Apple</option>
+                <option value = "amngo">Mango</option>
+                <option value = "banana">banana</option>
+            </select>
+
+        </div>
+
+        <!--practice-->
+        <div>
+            choose your Subsjects : 
+            <label for="math" >Maths</label>
+            <input type="checkbox"  id = "meth" name = "Sub" value = "math"> 
+            <label for="phy" >Physics</label>
+            <input type="checkbox" id = "phy" name = "sub" value = "phy">
+            <label for="chmi" >Chemistry</label>
+            <input type="checkbox" id = "chi" name = "sub" value = "chme" >
+            <button>Submit</button>
+
+        </div>
+
+        <hr>
+        <label for="vol">Select your volume in numbers : </label>
+        <input type="range" id ="val" name = "vol" min = "0" max = "100" step = "20" value ="60">
+        <button>Submit</button>
+
+        <hr>
+        <label for="feedback"> Please whritr your valuable fedback</label>
+        <textarea name="feed" id="feedback" rows = "3" cols = "9" placeholder ="Whritr your feedback here"></textarea>
+        <button>Submit</button>
+        <hr>
+
+        <!--practice-->
+        <h1>Registration Form</h1>
+        <label for="name">Enter Your name : </label>
+        <br>
+        <div>
+            <input type="text" placeholder = "first Name" name = "name" >
+            <input type="text" placeholder = "last Name" name = "name" >
+        </div>
+       
+        <div>
+        <label for="gender">Please select gender </label>
+        <select id = "male" name = "man">
+            
+            <option value="mal">Male</option>
+            <option value="Fem">Female</option>
+            <option value="other">other</option>
+        </select>
+
+        </div>
+        
+      
+        <div>
+            Do you span to all  terms of service?
+            <input type="checkbox" id = "check" name = "check" checked>
+            <label for="check">Yes, I am agree</label>
+
+        </div>
+        
+        <button>Register</button>
+       
+    </form>
+    
+</body>
+</html>
